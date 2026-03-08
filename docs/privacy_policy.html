@@ -23,24 +23,29 @@
 
     <h2>1. Toplanan ve İşlenen Veriler</h2>
     <ul>
-        <li>💾 <strong>Yerel Veri:</strong> Vardiya kayıtları, personel isimleri ve telefon numaraları cihazınızda yerel olarak saklanır.</li>
-        <li>☁️ <strong>Bulut Yedekleme (İsteğe Bağlı):</strong> Kullanıcılar verilerini kendi <strong>Google Drive</strong> hesaplarına yedekleyebilir. Bu işlem için Google Girişi gereklidir.</li>
-        <li>📧 <strong>Google Hesap Bilgileri:</strong> Bulut yedekleme özelliğini kullanırsanız, kimlik doğrulama için e-posta adresiniz Google tarafından işlenir.</li>
-        <li>💳 <strong>Ödeme Bilgileri:</strong> Satın alma işlemleri <strong>Google Play Store</strong> üzerinden yapılır. Uygulama kart bilgilerinizi görmez.</li>
+        <li>💾 <strong>Yerel Veri:</strong> Vardiya kayıtları, personel isimleri ve telefon numaraları yalnızca cihazınızda yerel olarak saklanır.</li>
+        <li>☁️ <strong>Bulut Yedekleme (İsteğe Bağlı):</strong> Kullanıcılar verilerini kendi <strong>Google Drive</strong> hesaplarına yedekleyebilir. Bu işlem için Google Girişi gereklidir ve uygulama sadece kendi oluşturduğu dosyalara erişir.</li>
+        <li>📧 <strong>Google Hesap Bilgileri:</strong> Yedekleme özelliğini kullanırsanız, kimlik doğrulama e-posta adresiniz Google tarafından işlenir.</li>
+        <li>💳 <strong>Ödeme Bilgileri:</strong> Premium satın alma işlemleri doğrudan <strong>Google Play Store</strong> üzerinden yapılır. Uygulama kredi kartı bilgilerinizi görmez veya saklamaz.</li>
     </ul>
 
-    <h2>2. İzinler ve Kullanım</h2>
+    <h2>2. İzinler ve Kullanım Amaçları</h2>
     <ul>
-        <li>📞 <strong>Telefon ve SMS:</strong> Personeli aramanız veya mesaj atmanız için sistem uygulamalarını tetikler. Kayıtlarınız okunmaz.</li>
-        <li>📂 <strong>Depolama Erişimi:</strong> Yedekleme ve PDF/Excel raporlarını kaydetmek için gerekebilir.</li>
-        <li>📷 <strong>Kamera Erişimi:</strong> Personel profillerine fotoğraf eklemek için kullanılır. Fotoğraflar cihazınızda kalır.</li>
+        <li>📞 <strong>Telefon ve SMS:</strong> Uygulama içinden personeli aramanız veya mesaj atmanız için sistem uygulamalarını tetikler. Kişisel kayıtlarınıza erişilmez.</li>
+        <li>📂 <strong>Depolama Erişimi:</strong> Yerel yedekleme/geri yükleme ve PDF/Excel raporlarını cihazınıza kaydetmek için kullanılır.</li>
+        <li>📷 <strong>Kamera Erişimi:</strong> Personel profillerine fotoğraf eklemek için kullanılır. Çekilen fotoğraflar yalnızca cihazınızda saklanır.</li>
     </ul>
 
-    <h2>3. Üçüncü Parti Hizmetler</h2>
-    <p>Uygulama, Google Drive API ve Google Play Services kullanır. Verileriniz reklam amaçlı üçüncü şahıslarla <strong>paylaşılmaz</strong>.</p>
+    <h2>3. Üçüncü Parti Hizmetler ve Veri Paylaşımı</h2>
+    <p>Uygulama, temel işlevselliği sağlamak için aşağıdaki güvenilir servis sağlayıcıları kullanır:</p>
+    <ul>
+        <li><strong>Google Drive API:</strong> Verilerinizi buluta yedeklemek için (Kullanıcı kontrolünde).</li>
+        <li><strong>Google Play Services:</strong> Kimlik doğrulama ve güvenli ödeme işlemleri için.</li>
+    </ul>
+    <p>Bu servisler haricinde verileriniz reklam amaçlı kullanılmaz veya başka şirketlerle <strong>paylaşılmaz</strong>.</p>
 
     <h2>4. Güvenlik</h2>
-    <p>Uygulama veritabanı cihazınızın korumalı alanında (Sandbox) saklanır.</p>
+    <p>Veritabanı cihazın korumalı Sandbox alanında saklanır ve yedekleme dosyalarınız AES-256 standardı ile korunabilir.</p>
 
     <h2>5. İletişim</h2>
     <div class="contact">
@@ -49,7 +54,7 @@
 
     <div class="footer-links">
         <p>
-            <a href="terms_conditions.html">Kullanım Koşulları</a> |  
+            <a href="terms_conditions.html">Kullanım Koşulları</a> | 
             <a href="data_deletion.html">Veri Silme Politikası</a>
         </p>
     </div>
