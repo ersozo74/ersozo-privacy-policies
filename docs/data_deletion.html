@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veri Silme Politikası - Vardiya Hesaplama</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
-        h1 { color: #333; }
-        h2 { color: #555; }
-        code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #e67e22; margin-top: 30px; }
+        p, li { margin-bottom: 15px; }
+        ol { padding-left: 20px; }
+        code { background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', Courier, monospace; }
+        .contact-box { background-color: #f9f9f9; padding: 20px; border-radius: 5px; border-left: 5px solid #e67e22; margin-top: 30px; }
+        a { color: #e67e22; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 20px; font-size: 0.9em; border-top: 1px solid #eee; pt: 10px; }
     </style>
 </head>
 <body>
-    <h1>Veri Silme Talebi</h1>
+    <h1>Veri Silme Politikası ve Talebi</h1>
     <p><strong>Uygulama:</strong> Vardiya Hesaplama</p>
+    <p><strong>Geliştirici:</strong> Oğuz Ersöz</p>
+    <p><strong>Son Güncelleme:</strong> 8 Mart 2026</p>
 
     <p>
-        Vardiya Hesaplama uygulaması, kullanıcı verilerini (personel listesi, vardiya kayıtları, maaş parametreleri vb.) yalnızca kullanıcının kendi cihazında saklar. Geliştiricinin bu verilere doğrudan erişimi yoktur.
+        Vardiya Hesaplama uygulaması, gizliliğinize önem verir. Uygulama, kullanıcı verilerini (personel listesi, vardiya kayıtları, maaş parametreleri vb.) yalnızca kullanıcının kendi cihazında saklar. Geliştiricinin bu verilere doğrudan erişimi veya bu verileri kendi sunucularında depolama gibi bir durumu yoktur.
     </p>
     <p>
-        Google Drive yedekleme özelliği kullanıldığında ise veritabanı dosyası, yine kullanıcının kendi talebi ve onayıyla, kullanıcının kendi Google Drive hesabına şifreli olarak yüklenir. Bu yedek dosyalarına da geliştiricinin erişimi bulunmamaktadır.
+        Google Drive yedekleme özelliği kullanıldığında ise veritabanı dosyası, tamamen kullanıcının kendi talebi ve onayıyla, kullanıcının kendi şahsi Google Drive hesabına yüklenir. Bu yedek dosyalarına geliştiricinin erişimi bulunmamaktadır.
     </p>
 
     <h2>Verilerinizi Nasıl Silebilirsiniz?</h2>
@@ -29,13 +37,33 @@
             <strong>Tek Tek Kayıt Silme:</strong> Ana ekranda silmek istediğiniz personeli seçtikten sonra, yönetici girişi yaparak "Sil" butonunu kullanabilirsiniz.
         </li>
         <li>
-            <strong>Tüm Verileri Silme (Uygulamayı Sıfırlama):</strong> Uygulamanın "Ayarlar" menüsündeki <code>Tüm Verileri Temizle</code> seçeneğini kullanarak uygulamadaki tüm verilerinizi (personel, vardiyalar, ayarlar vb.) kalıcı olarak silebilirsiniz. Bu işlem geri alınamaz.
+            <strong>Tüm Verileri Silme (Uygulamayı Sıfırlama):</strong> Uygulamanın "Ayarlar" menüsündeki <code>Tüm Verileri Temizle</code> seçeneğini kullanarak uygulamadaki tüm verilerinizi (personel, vardiyalar, ayarlar vb.) kalıcı olarak silebilirsiniz. <strong>Bu işlem geri alınamaz.</strong>
+        </li>
+        <li>
+            <strong>Uygulamayı Kaldırma:</strong> Uygulamayı cihazınızdan kaldırdığınızda (eğer Android sistem yedeği açık değilse) yerel veritabanı cihazınızdan silinecektir.
         </li>
     </ol>
 
     <h2>Bulut Yedeklerini Silme</h2>
     <p>
-        Google Drive'a yedeklediğiniz dosyaları silmek için kendi Google Drive hesabınıza giriş yaparak "VardiyaYedekleri" klasörünü bulup içindeki dosyaları manuel olarak silebilirsiniz.
+        Google Drive'a yedeklediğiniz dosyaları silmek için iki yönteminiz vardır:
     </p>
+    <ol>
+        <li><strong>Uygulama İçinden Silme:</strong> Menüden "Bulut Yedekleme" seçeneğini açın. "Geri Yükle" dedikten sonra açılan listeden silmek istediğiniz yedeği seçip "Sil" butonunu kullanabilirsiniz.</li>
+        <li><strong>Google Drive'dan Manuel Silme:</strong> Kendi Google Drive hesabınıza web veya mobil uygulama üzerinden giriş yapın. <code>VardiyaYedekleri</code> adında bir klasör göreceksiniz. Bu klasörün içindeki istemediğiniz yedek dosyalarını silebilir veya klasörü tamamen kaldırabilirsiniz.</li>
+    </ol>
+    
+    <div class="contact-box">
+        <h3>Veri Silme Talebi ve İletişim</h3>
+        <p>Verilerinizin silinmesiyle ilgili herhangi bir sorun yaşarsanız veya bir talepte bulunmak isterseniz, geliştiriciye aşağıdaki e-posta adresinden ulaşabilirsiniz:</p>
+        <p><strong>E-posta:</strong> <a href="mailto:ersozo74@gmail.com">ersozo74@gmail.com</a></p>
+    </div>
+
+    <div class="footer-links">
+        <p>
+            <a href="privacy_policy.html">Gizlilik Politikası</a> | 
+            <a href="terms_conditions.html">Kullanım Koşulları</a>
+        </p>
+    </div>
 </body>
 </html>
