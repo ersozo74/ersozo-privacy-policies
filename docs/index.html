@@ -4,22 +4,89 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="pMVXKzYK8ApuWBEMQpx20k3tKX8-N4ldnOG7HMwTTWM" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vardiya Hesaplama</title>
+    <title>Vardiya Hesaplama - Oğuz Ersöz</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; color: #333; background-color: #f4f7f6; }
-        .container { max-width: 800px; margin: 40px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: left; }
-        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 10px; color: #333; background-color: #f4f7f6; margin: 0; }
+        
+        /* KAYDIRILABİLİR ÜST MENÜ */
+        .app-navbar {
+            background: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 20px;
+        }
+
+        .scroll-menu {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 5px 15px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .scroll-menu::-webkit-scrollbar {
+            display: none;
+        }
+
+        .app-tab {
+            display: inline-block;
+            padding: 8px 18px;
+            margin-right: 10px;
+            background: #f0f2f5;
+            border-radius: 20px;
+            color: #555;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .app-tab.active {
+            background: #3498db;
+            color: #fff;
+            border-color: #2980b9;
+        }
+
+        /* PASİF BUTON STİLİ (Basınca bir şey olmasın diye) */
+        .app-tab.disabled {
+            opacity: 0.7;
+            cursor: default; /* El işareti çıkmaz */
+            pointer-events: none; /* Tıklamayı tamamen iptal eder */
+        }
+
+        .app-tab:hover:not(.disabled) {
+            background: #e1e4e8;
+        }
+
+        /* ANA KONTEYNER */
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: left; }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 0; }
         h3 { color: #2980b9; margin-top: 25px; }
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
         .app-description { margin-top: 20px; }
+        .contact-info { background: #e8f4fd; padding: 15px; border-radius: 8px; margin-top: 20px; font-size: 0.85em; }
         .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; font-size: 0.9em; color: #7f8c8d; }
         .footer a { color: #3498db; text-decoration: none; font-weight: bold; }
         .footer a:hover { text-decoration: underline; }
-        .contact-info { background: #e8f4fd; padding: 15px; border-radius: 8px; margin-top: 20px; font-size: 0.85em; }
     </style>
 </head>
 <body>
+
+    <nav class="app-navbar">
+        <div class="scroll-menu">
+            <a href="https://www.ersozo.com.tr/index.html" class="app-tab active">📅 Vardiya Hesaplama</a>
+            
+            <a href="javascript:void(0)" class="app-tab disabled">📈 Bioritim ve Numeroloji (Yakında)</a>
+            <a href="javascript:void(0)" class="app-tab disabled">🚀 Yeni Uygulamalar</a>
+        </div>
+    </nav>
+
     <div class="container">
         <h1>Vardiya Hesaplama</h1>
         
